@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 void main() {
-  runApp(MaterialApp(home: MyApp()));
+  runApp(
+    MaterialApp(home: MyApp(), debugShowCheckedModeBanner: false),
+  );
 }
 
 class MyApp extends StatelessWidget {
