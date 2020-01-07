@@ -16,14 +16,22 @@ class MyApp extends StatelessWidget {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
               child: Text(
-                'Welcome My Dear',
+                'Good Morning My Dear',
                 style: TextStyle(
-                    fontSize: 40.0,
+                    fontSize: 30.0,
                     color: Colors.white,
                     fontFamily: 'Brush font'),
               ),
             ),
-            Image.network('https://i.picsum.photos/id/9/250/250.jpg'),
+            Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(25.0),
+                child: Image.asset(
+                  "assets/images/gm1.jpg",
+                ),
+              ),
+            ),
           ],
         ),
       ),
